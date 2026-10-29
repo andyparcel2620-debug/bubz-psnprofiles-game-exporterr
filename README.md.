@@ -1,0 +1,32 @@
+# Bubz PSNProfiles Game Exporter
+
+A browser userscript for exporting game information visible on PSNProfiles pages to CSV.
+
+## Features
+
+- Export game titles and platforms where available.
+- Capture trophy counts and completion status where available.
+- Capture playtime only when the source actually provides it.
+- Download a CSV for Excel or Google Sheets.
+
+## Installation
+
+1. Install Tampermonkey in a supported desktop browser.
+2. Create a new userscript in Tampermonkey.
+3. Copy the contents of `psnprofiles-game-exporter.user.js` into it.
+4. Visit PSNProfiles and use the export button.
+5. Review the CSV for missing fields and duplicates.
+
+## Important limitations
+
+This is an initial prototype that needs testing against actual PSNProfiles pages. The site's layout may change, and some fields may not be available.
+
+The exporter must not invent missing playtime or bypass access controls, CAPTCHAs, or rate limits.
+
+## Privacy
+
+The script is intended to run locally in your browser. It should never ask for your PSN password or send your game data to an unrelated service.
+
+## Project status
+
+Initial prototype — testing and improvements required.
